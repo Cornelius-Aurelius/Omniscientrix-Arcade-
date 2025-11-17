@@ -173,6 +173,68 @@ footer a{color:var(--ultra);text-decoration:none;text-shadow:var(--glow-soft);}
 /* RESPONSIVE */
 @media(max-width:700px){.section{padding:30px;margin:25px 10px;}}
 @media(max-width:450px){.hero h1{font-size:2.3rem;}.hero h2{font-size:.8rem;}}
+
+
+/* ========================= */
+/* 🔥 Ω∞+++ VISUAL EFFECT UPGRADES */
+/* ========================= */
+
+/* NEON CARD HOVER RIPPLE */
+.game-card {
+  position: relative;
+  overflow: hidden;
+}
+.game-card::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 0; height: 0;
+  background: rgba(25, 214, 255, 0.35);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: width 0.6s ease, height 0.6s ease, opacity 0.4s ease;
+}
+.game-card:hover::after {
+  width: 350%;
+  height: 350%;
+  opacity: 1;
+}
+
+/* FLOATING PARTICLES OVER CARDS */
+.particle-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* SIGIL ANIMATION */
+@keyframes sigilSpin {
+  0% { transform: rotate(0deg) scale(1); filter: drop-shadow(0 0 6px var(--ultra)); }
+  100% { transform: rotate(360deg) scale(1.03); filter: drop-shadow(0 0 14px var(--ultra)); }
+}
+.sigil {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+  border: 3px solid var(--ultra);
+  animation: sigilSpin 10s linear infinite;
+}
+
+/* SECTION DIVIDER */
+.section-divider {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--ultra), transparent);
+  margin: 60px 0;
+  box-shadow: 0 0 12px var(--ultra);
+}
+
 </style>
 </head>
 
