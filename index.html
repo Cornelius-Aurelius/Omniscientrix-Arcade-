@@ -191,8 +191,8 @@ body::after{
 .game-card:hover .game-thumb{filter:brightness(1.35);} 
 
 /* SCROLL REVEAL */
-.reveal{opacity:0;transform:translateY(40px);transition:1s ease-out;}
-.reveal.visible{opacity:1;transform:translateY(0);} 
+.visible{opacity:1;transform:translateY(40px);transition:1s ease-out;}
+.visible.visible{opacity:1;transform:translateY(0);} 
 
 </style>
 </head>
@@ -200,7 +200,7 @@ body::after{
 <body>
 
 <!-- NAVIGATION BAR (LEGENDARY) -->
-<div class="navbar reveal">
+<div class="navbar visible">
   <a href="#games">Games</a>
   <a href="https://cornelius-aurelius.github.io">Home</a>
   <a href="#footer">Network</a>
@@ -216,7 +216,7 @@ body::after{
   <h2>The HyperNeon Cosmic Game Grid — Created by Cornelius Aurelius</h2>
 </div>
 
-<div class="section reveal" id="games">
+<div class="section visible" id="games">
   <h3>Featured Neon Games</h3>
   <div class="grid">
 
@@ -235,7 +235,7 @@ body::after{
   </div></div>
 
 <!-- NETWORK HUB -->
-<div class="section reveal" id="network">
+<div class="section visible" id="network">
   <h3>Omniscientrix Network</h3>
   <p>Explore the wider universe built by Cornelius Aurelius.</p>
   <ul style="list-style:none;padding:0;font-size:1.1rem;line-height:2.1;">
