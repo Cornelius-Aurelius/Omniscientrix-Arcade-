@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>OMNISCIENTRIX ARCADE Ω∞ ULTRA — THE NEON COSMIC GAME GRID</title>
+<title>Omniscientrix Arcade</title>
 
 <!-- ========================= -->
 <!-- 🔥 ULTIMATE SEO + AUTHORITY -->
@@ -150,9 +150,61 @@ footer a{color:var(--ultra);text-decoration:none;text-shadow:var(--glow-soft);}
 @media(max-width:700px){.section{padding:35px;margin:25px 15px;}}
 @media(max-width:450px){.hero h1{font-size:2.3rem;}.hero h2{font-size:.85rem;}}
 </style>
+
+<!-- GOD‑MODE LEGENDARY TIER VISUAL ENGINE ACTIVATED -->
+<style>
+/* LEGENDARY MODE ADDITIONS */
+
+/* GLOBAL LIGHT BEAM */
+body::after{
+  content:"";
+  position:fixed;top:0;left:50%;transform:translateX(-50%);
+  width:70vw;height:100vh;
+  background:radial-gradient(circle,rgba(0,255,255,0.08),transparent 70%);
+  z-index:-4;pointer-events:none;
+}
+
+/* FLOATING HOLOGRAPHIC NAV */
+.navbar{
+  position:fixed;top:20px;left:50%;transform:translateX(-50%);
+  display:flex;gap:32px;padding:12px 28px;
+  background:rgba(0,25,50,0.55);
+  border:1px solid rgba(25,214,255,0.4);
+  backdrop-filter:blur(10px);
+  border-radius:18px;box-shadow:0 0 20px rgba(0,200,255,0.25);
+  z-index:50;
+}
+.navbar a{
+  color:var(--ultra);text-decoration:none;font-weight:bold;
+  font-size:.95rem;letter-spacing:1px;
+  transition:.25s;
+}
+.navbar a:hover{color:white;text-shadow:0 0 12px var(--ultra);} 
+
+/* GAME THUMBNAIL SUPPORT */
+.game-thumb{
+  width:100%;height:150px;border-radius:12px;margin-bottom:14px;
+  background-size:cover;background-position:center;
+  filter:brightness(1.05) drop-shadow(0 0 8px rgba(0,200,255,0.35));
+  transition:.35s;
+}
+.game-card:hover .game-thumb{filter:brightness(1.35);} 
+
+/* SCROLL REVEAL */
+.reveal{opacity:0;transform:translateY(40px);transition:1s ease-out;}
+.reveal.visible{opacity:1;transform:translateY(0);} 
+
+</style>
 </head>
 
 <body>
+
+<!-- NAVIGATION BAR (LEGENDARY) -->
+<div class="navbar reveal">
+  <a href="#games">Games</a>
+  <a href="https://cornelius-aurelius.github.io">Home</a>
+  <a href="#footer">Network</a>
+</div>
 
 <canvas id="bg1"></canvas>
 <canvas id="bg2"></canvas>
@@ -164,7 +216,7 @@ footer a{color:var(--ultra);text-decoration:none;text-shadow:var(--glow-soft);}
   <h2>The HyperNeon Cosmic Game Grid — Created by Cornelius Aurelius</h2>
 </div>
 
-<div class="section">
+<div class="section reveal" id="games">
   <h3>Featured Neon Games</h3>
   <div class="grid">
 
@@ -180,10 +232,19 @@ footer a{color:var(--ultra);text-decoration:none;text-shadow:var(--glow-soft);}
 
     <div class="game-card"><h4>Resonance Tapper</h4><p>Sync with harmonic neon pulses and ascend the resonance ladder.</p><a href="https://corneliusaurelius.github.io/resonance-tapper/">PLAY GAME</a></div>
 
-  </div>
-</div>
+  </div></div>
 
-<footer>
+<!-- NETWORK HUB -->
+<div class="section reveal" id="network">
+  <h3>Omniscientrix Network</h3>
+  <p>Explore the wider universe built by Cornelius Aurelius.</p>
+  <ul style="list-style:none;padding:0;font-size:1.1rem;line-height:2.1;">
+    <li><a href="https://cornelius-aurelius.github.io/Omniscientrix-Laws/" style="color:var(--ultra);text-decoration:none;">Universal Laws Archive</a></li>
+    <li><a href="https://cornelius-aurelius.github.io/AI-ART/" style="color:var(--ultra);text-decoration:none;">AI Art Portal</a></li>
+    <li><a href="https://cornelius-aurelius.github.io/BOOKS--/" style="color:var(--ultra);text-decoration:none;">Books & Written Works</a></li>
+  </ul>
+</div>
+<footer id="footer">
   © 2025 Cornelius Aurelius — Omniscientrix vΩ System ·
   <a href="https://zenodo.org/records/17362534">Peace License</a>
 </footer>
