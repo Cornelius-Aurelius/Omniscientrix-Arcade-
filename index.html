@@ -3,207 +3,173 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>OMNISCIENTRIX ARCADE Ω∞ — NEON GAME NETWORK</title>
+<title>OMNISCIENTRIX ARCADE Ω∞+ — HYPERNEON COSMIC GAME GRID</title>
+
+<!-- ========================= -->
+<!-- 🔥 ULTIMATE SEO PACKAGE 🔥 -->
+<!-- ========================= -->
+<meta name="author" content="Cornelius Aurelius" />
+<meta name="description" content="Omniscientrix Arcade Ω∞ — Neon Cosmic Games created by Cornelius Aurelius. Hyperneon puzzle, orbit, rhythm, and reflex games inside a cosmic multiverse." />
+<meta name="keywords" content="Cornelius Aurelius, Omniscientrix Arcade, Neon Games, Cosmic Games, Reflex Games, Orbit Games, Reality Breaker, Neon Block Flip, Neon Skyrail, Singularity Game, Indie Games, Informational Universe" />
+<meta name="robots" content="index, follow" />
+
+<!-- Social Preview -->
+<meta property="og:title" content="Omniscientrix Arcade Ω∞ — Neon Cosmic Game Grid" />
+<meta property="og:description" content="Neon cosmic games created by Cornelius Aurelius — Reflex, orbit, rail, rhythm, and reality-shifting games in a unified neon universe." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://cornelius-aurelius.github.io/Omniscientrix-Arcade/preview.png" />
+<meta property="og:url" content="https://cornelius-aurelius.github.io/Omniscientrix-Arcade/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- ========================= -->
+<!-- 🔥 SCHEMA.ORG: PERSON + GAMES -->
+<!-- ========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Cornelius Aurelius",
+  "url": "https://cornelius-aurelius.github.io",
+  "jobTitle": "Creator of the Omniscientrix Framework, Game Developer, Polymath",
+  "sameAs": [
+    "https://zenodo.org/records/17362534",
+    "https://instagram.com/cornelius_aurelius_",
+    "https://github.com/cornelius-aurelius"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Omniscientrix Arcade Games",
+  "itemListElement": [
+    { "@type": "VideoGame", "name": "Neon Block Flip", "url": "https://cornelius-aurelius.github.io/neon-block-flip/" },
+    { "@type": "VideoGame", "name": "NEON SKYRAIL", "url": "https://cornelius-aurelius.github.io/NEON-SKYRAIL/" },
+    { "@type": "VideoGame", "name": "Neon Orbit Singularity", "url": "https://cornelius-aurelius.github.io/neon-orbit-singularity/" },
+    { "@type": "VideoGame", "name": "Reality Breaker", "url": "https://cornelius-aurelius.github.io/reality-breaker/" },
+    { "@type": "VideoGame", "name": "Money Master Jr.", "url": "https://corneliusaurelius.github.io/money-master-jr/" },
+    { "@type": "VideoGame", "name": "Resonance Tapper", "url": "https://corneliusaurelius.github.io/resonance-tapper/" }
+  ]
+}
+</script>
+
+<!-- ========================= -->
+<!-- 🔥 STYLES (ENHANCED RESPONSIVE + HOLOGRAPHIC) -->
+<!-- ========================= -->
 <style>
   :root {
     --neon:#19d6ff;
-    --glow:0 0 10px #19d6ff,0 0 25px #19d6ff,0 0 55px #19d6ff;
+    --glow-hard:0 0 20px #19d6ff,0 0 50px #19d6ff,0 0 120px #19d6ff;
+    --glow-soft:0 0 12px #19d6ff,0 0 25px #19d6ff;
   }
-  body {
+
+  body{
     margin:0;
     font-family:'Orbitron',sans-serif;
     background:#000;
     color:var(--neon);
     overflow-x:hidden;
   }
-  canvas#bgstarfield {
-    position:fixed;
-    top:0; left:0;
-    width:100%; height:100%;
-    z-index:-1;
+
+  /* LAYERED STARFIELD */
+  #layer1,#layer2,#layer3{
+    position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none;
   }
+  #layer1{opacity:0.25;filter:blur(1px);}  
+  #layer2{opacity:0.45;filter:blur(2px);} 
+  #layer3{opacity:0.7;filter:blur(3px);} 
 
   /* HERO */
-  .hero {
+  .hero{
     text-align:center;
-    padding:150px 20px 110px 20px;
-    background:radial-gradient(circle,#001020,#000 80%);
+    padding:170px 20px 120px;
+    background:radial-gradient(circle,#001020 0%,#000 85%);
   }
-  .hero h1 {
-    font-size:4.5rem;
-    margin:0;
-    text-shadow:var(--glow);
-  }
-  .hero h2 {
-    margin-top:10px;
-    font-size:1.2rem;
-    text-shadow:0 0 15px var(--neon);
-    opacity:0.85;
-  }
+  .hero h1{font-size:clamp(2.5rem,8vw,5rem);text-shadow:var(--glow-hard);} 
+  .hero h2{font-size:clamp(1rem,3vw,1.4rem);opacity:.9;text-shadow:var(--glow-soft);} 
 
   /* SECTION */
-  .section {
-    max-width:1200px;
-    margin:60px auto;
-    padding:40px;
-    background:rgba(0,30,60,0.5);
+  .section{
+    max-width:1300px;
+    margin:70px auto;
+    padding:45px;
+    background:rgba(0,35,60,0.55);
     border-left:4px solid var(--neon);
-    border-radius:12px;
-    box-shadow:0 0 35px rgba(0,140,255,0.35);
-    backdrop-filter:blur(10px);
+    border-radius:18px;
+    box-shadow:0 0 50px rgba(0,150,255,0.35);
+    backdrop-filter:blur(12px);
   }
-  .section h3 {
-    font-size:2.4rem;
-    margin-bottom:25px;
-    text-shadow:var(--glow);
-  }
+
+  .section h3{font-size:2.5rem;text-shadow:var(--glow-soft);} 
 
   /* GAME GRID */
-  .grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-  }
-  .game-card {
-    background:rgba(0,60,100,0.45);
-    border:2px solid var(--neon);
-    border-radius:12px;
-    padding:25px;
-    box-shadow:0 0 25px rgba(0,150,255,0.35);
-    transition:0.25s;
-  }
-  .game-card:hover {
-    transform:scale(1.05);
-    box-shadow:var(--glow);
-    background:rgba(0,150,255,0.25);
-  }
-  .game-card h4 {
-    margin:0 0 12px 0;
-    font-size:1.3rem;
-    text-shadow:0 0 10px var(--neon);
-  }
-  .game-card p {
-    font-size:0.9rem;
-    opacity:0.9;
-    margin-bottom:15px;
-  }
-  .game-card a {
-    display:inline-block;
-    padding:12px 18px;
-    background:rgba(0,80,120,0.4);
-    border:2px solid var(--neon);
-    border-radius:10px;
-    text-decoration:none;
-    color:var(--neon);
-    font-weight:bold;
-    transition:0.25s;
-  }
-  .game-card a:hover {
-    background:var(--neon);
-    color:#000;
-    box-shadow:var(--glow);
+  .grid{
+    display:grid;gap:32px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   }
 
-  footer {
-    text-align:center;
-    padding:50px 20px;
-    opacity:0.8;
+  .game-card{
+    padding:28px;
+    background:rgba(0,70,120,0.5);
+    border:2px solid var(--neon);
+    border-radius:16px;
+    position:relative;
+    overflow:hidden;
+    transition:0.35s;
+    transform-style:preserve-3d;
   }
-  footer a {
-    text-decoration:none;
-    color:var(--neon);
-    font-weight:bold;
-    text-shadow:var(--glow);
+  .game-card:hover{
+    transform:scale(1.08) rotate3d(1,1,0,8deg);
+    background:rgba(0,180,255,0.25);
+    box-shadow:var(--glow-hard);
   }
 
-  /* MOBILE RESPONSIVE FIXES */
-  @media (max-width:700px) {
-    .hero h1 { font-size:3rem; }
-    .hero h2 { font-size:0.9rem; }
-    .section { padding:25px; margin:40px 12px; }
+  .game-card::before{
+    content:"";
+    position:absolute;top:0;left:-100%;width:300%;height:100%;
+    background:linear-gradient(120deg,transparent,rgba(25,214,255,0.35),transparent);
+    transform:skewX(-25deg);
+    transition:0.6s;
   }
-  @media (max-width:450px) {
-    .hero h1 { font-size:2.2rem; }
-    .hero h2 { font-size:0.75rem; }
+  .game-card:hover::before{left:100%;}
+
+  .game-card h4{text-shadow:var(--glow-soft);font-size:1.35rem;margin:0 0 12px;} 
+  .game-card p{opacity:.9;line-height:1.45;margin-bottom:18px;} 
+
+  .game-card a{
+    display:inline-block;padding:12px 18px;border:2px solid var(--neon);
+    border-radius:12px;text-decoration:none;font-weight:bold;color:var(--neon);
+    background:rgba(0,70,120,0.35);
+    transition:0.25s;
   }
+  .game-card a:hover{background:var(--neon);color:#000;box-shadow:var(--glow-soft);} 
+
+  footer{text-align:center;padding:55px 20px;opacity:.8;} 
+  footer a{color:var(--neon);text-decoration:none;text-shadow:var(--glow-soft);} 
+
+  /* MOBILE */
+  @media (max-width:700px){.section{padding:30px;margin:40px 10px;}}
+  @media (max-width:450px){.hero h1{font-size:2.1rem;}.hero h2{font-size:.75rem;}}
 </style>
 </head>
 
 <body>
-<canvas id="bgstarfield"></canvas>
+
+<!-- MULTI-LAYER STARFIELD -->
+<canvas id="layer1"></canvas>
+<canvas id="layer2"></canvas>
+<canvas id="layer3"></canvas>
 
 <div class="hero">
-  <h1>OMNISCIENTRIX ARCADE Ω∞</h1>
-  <h2>THE NEON COSMIC GAME GRID — CREATED BY CORNELIUS AURELIUS</h2>
+  <h1>OMNISCIENTRIX ARCADE Ω∞+</h1>
+  <h2>THE COSMIC NEON GAME GRID — CREATED BY CORNELIUS AURELIUS</h2>
 </div>
 
 <div class="section">
   <h3>Featured Neon Games</h3>
   <div class="grid">
 
-    <div class="game-card">
-      <h4>Neon Block Flip</h4>
-      <p>Fast, reflex-based neon puzzle flipping challenge.</p>
-      <a href="https://cornelius-aurelius.github.io/neon-block-flip/">Play Game</a>
-    </div>
-
-    <div class="game-card">
-      <h4>NEON SKYRAIL</h4>
-      <p>High‑speed rail runner in a neon cosmic world.</p>
-      <a href="https://cornelius-aurelius.github.io/NEON-SKYRAIL/">Play Game</a>
-    </div>
-
-    <div class="game-card">
-      <h4>Neon Orbit Singularity</h4>
-      <p>A gravitational neon orbit game around a collapsing singularity.</p>
-      <a href="https://cornelius-aurelius.github.io/neon-orbit-singularity/">Play Game</a>
-    </div>
-
-    <div class="game-card">
-      <h4>Reality Breaker</h4>
-      <p>Break illusions, shift dimensions, surpass reality.</p>
-      <a href="https://cornelius-aurelius.github.io/reality-breaker/">Play Game</a>
-    </div>
-
-    <div class="game-card">
-      <h4>Money Master Jr.</h4>
-      <p>A fun interactive money and thinking skills minigame.</p>
-      <a href="https://corneliusaurelius.github.io/money-master-jr/">Play Game</a>
-    </div>
-
-    <div class="game-card">
-      <h4>Resonance Tapper</h4>
-      <p>Tap‑based resonance rhythm game powered by informational harmony.</p>
-      <a href="https://corneliusaurelius.github.io/resonance-tapper/">Play Game</a>
-    </div>
-
-  </div>
-</div>
-
-<footer>
-  © 2025 Cornelius Aurelius — Omniscientrix vΩ Framework •
-  <a href="https://zenodo.org/records/17362534">Peace License</a>
-</footer>
-
-<script>
-  /* STARFIELD */
-  const c = document.getElementById('bgstarfield');
-  const ctx = c.getContext('2d');
-  function resize(){ c.width = innerWidth; c.height = innerHeight; }
-  resize(); window.onresize = resize;
-  let stars = Array.from({length:450}, ()=>({x:Math.random()*c.width,y:Math.random()*c.height,z:Math.random()*2+1}));
-  function animate(){
-    ctx.clearRect(0,0,c.width,c.height);
-    stars.forEach(s=>{
-      ctx.fillStyle = `rgba(25,214,255,${0.3+Math.random()*0.7})`;
-      ctx.beginPath(); ctx.arc(s.x,s.y,s.z,0,6.28); ctx.fill();
-      s.y += s.z * 0.2;
-      if(s.y > c.height) s.y = 0;
-    });
-    requestAnimationFrame(animate);
-  }
-  animate();
-</script>
-
-</body>
-</html>
+    <div class="game-card"><h4>Neon Block Flip</h4><p>Reflex-driven neon flipping challenge.</p><a href="https://cornelius-aurelius.github.io/neon-block-flip/">PLAY</a></div>
+    <div class="game-card"><h4>NEON SKYRAIL</h4><p>High-speed rail runner through neon cosmic space.</p><a href="https://cornelius-aurelius
