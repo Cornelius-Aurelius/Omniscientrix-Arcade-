@@ -1,253 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Omniscientrix Arcade</title>
-
-<!-- ========================= -->
-<!-- 🔥 ULTIMATE SEO + AUTHORITY -->
-<!-- ========================= -->
-<meta name="author" content="Cornelius Aurelius" />
-<meta name="description" content="Omniscientrix Arcade Ω∞ ULTRA — The Neon Cosmic Game Grid created by Cornelius Aurelius. Ultra‑premium neon puzzle, orbit, rail, rhythm, and reality‑breaking games." />
-<meta name="keywords" content="Cornelius Aurelius, Neon Arcade, Omniscientrix Arcade, Cosmic Games, Neon Games, Reflex Games, Reality Breaker, Neon Skyrail, Neon Orbit, Hyperneon Games, Indie Games" />
-<meta name="robots" content="index, follow" />
-<meta property="og:title" content="Omniscientrix Arcade Ω∞ ULTRA — Neon Cosmic Game Grid" />
-<meta property="og:description" content="Play ultra‑premium neon games crafted by Cornelius Aurelius." />
-<meta property="og:image" content="preview.png" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://cornelius-aurelius.github.io/Omniscientrix-Arcade/" />
-<meta name="twitter:card" content="summary_large_image" />
-
-<!-- ========================= -->
-<!-- 🔥 PERSON + GAME SCHEMA -->
-<!-- ========================= -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070b17"><meta name="author" content="Cornelius Aurelius">
+<title>Omniscientrix Arcade — Free Games Created by Cornelius Aurelius</title>
+<meta name="description" content="Play free original neon browser games created by Cornelius Aurelius. Neon Block Flip, Neon Skyrail, Neon Orbit, Reality Breaker and a playable Omega Signal memory challenge.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://cornelius-aurelius.github.io/Omniscientrix-Arcade-/">
+<meta property="og:type" content="website"><meta property="og:title" content="Omniscientrix Arcade — Original Browser Games by Cornelius Aurelius">
+<meta property="og:description" content="Five futuristic browser games. Play on your phone, Chromebook, tablet or desktop.">
+<meta property="og:url" content="https://cornelius-aurelius.github.io/Omniscientrix-Arcade-/">
+<meta name="twitter:card" content="summary">
 <script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"Person",
-"name":"Cornelius Aurelius",
-"url":"https://cornelius-aurelius.github.io",
-"jobTitle":"Creator of the Omniscientrix Framework, Game Developer, Polymath",
-"sameAs":["https://zenodo.org/records/17362534","https://instagram.com/cornelius_aurelius_","https://github.com/cornelius-aurelius"]
-}
+{"@context":"https://schema.org","@graph":[
+{"@type":"Person","@id":"https://corneliusaurelius.com/#person","name":"Cornelius Aurelius","url":"https://corneliusaurelius.com/","description":"Original creator of Omniscientrix Arcade and its browser games"},
+{"@type":"WebSite","@id":"https://cornelius-aurelius.github.io/Omniscientrix-Arcade-/#website","url":"https://cornelius-aurelius.github.io/Omniscientrix-Arcade-/","name":"Omniscientrix Arcade","creator":{"@id":"https://corneliusaurelius.com/#person"}},
+{"@type":"CollectionPage","name":"Omniscientrix Arcade","url":"https://cornelius-aurelius.github.io/Omniscientrix-Arcade-/","author":{"@id":"https://corneliusaurelius.com/#person"},"mainEntity":{"@id":"https://cornelius-aurelius.github.io/Omniscientrix-Arcade-/#games"}},
+{"@type":"ItemList","@id":"https://cornelius-aurelius.github.io/Omniscientrix-Arcade-/#games","numberOfItems":5,"itemListElement":[
+{"@type":"ListItem","position":1,"item":{"@type":"VideoGame","name":"Neon Block Flip OMEGA","url":"https://cornelius-aurelius.github.io/neon-block-flip/","creator":{"@id":"https://corneliusaurelius.com/#person"}}},
+{"@type":"ListItem","position":2,"item":{"@type":"VideoGame","name":"Neon Skyrail","url":"https://cornelius-aurelius.github.io/NEON-SKYRAIL/","creator":{"@id":"https://corneliusaurelius.com/#person"}}},
+{"@type":"ListItem","position":3,"item":{"@type":"VideoGame","name":"Neon Orbit Singularity","url":"https://cornelius-aurelius.github.io/neon-orbit-singularity/","creator":{"@id":"https://corneliusaurelius.com/#person"}}},
+{"@type":"ListItem","position":4,"item":{"@type":"VideoGame","name":"Reality Breaker","url":"https://cornelius-aurelius.github.io/reality-breaker/","creator":{"@id":"https://corneliusaurelius.com/#person"}}},
+{"@type":"ListItem","position":5,"item":{"@type":"VideoGame","name":"Omega Signal Memory","url":"https://cornelius-aurelius.github.io/Omniscientrix-Arcade-/#memory","creator":{"@id":"https://corneliusaurelius.com/#person"}}}
+]}]}
 </script>
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"ItemList",
-"name":"Omniscientrix Arcade Games",
-"itemListElement":[
-{"@type":"VideoGame","name":"Neon Block Flip","url":"https://cornelius-aurelius.github.io/neon-block-flip/"},
-{"@type":"VideoGame","name":"NEON SKYRAIL","url":"https://cornelius-aurelius.github.io/NEON-SKYRAIL/"},
-{"@type":"VideoGame","name":"Neon Orbit Singularity","url":"https://cornelius-aurelius.github.io/neon-orbit-singularity/"},
-{"@type":"VideoGame","name":"Reality Breaker","url":"https://cornelius-aurelius.github.io/reality-breaker/"},
-{"@type":"VideoGame","name":"Money Master Jr.","url":"https://corneliusaurelius.github.io/money-master-jr/"},
-{"@type":"VideoGame","name":"Resonance Tapper","url":"https://corneliusaurelius.github.io/resonance-tapper/"}
-]
-}
-</script>
-
-<!-- ========================= -->
-<!-- 🔥 MASTER STYLE: Ω∞ ULTRA -->
-<!-- ========================= -->
 <style>
-:root{
-  --neon:#19d6ff;
-  --ultra:#3ce6ff;
-  --deep:#00111f;
-  --glow-hard:0 0 22px #19d6ff,0 0 55px #19d6ff,0 0 140px #19d6ff;
-  --glow-soft:0 0 15px #19d6ff,0 0 30px #19d6ff;
-}
-body{
-  margin:0;background:#000;color:var(--neon);font-family:'Orbitron',sans-serif;overflow-x:hidden;
-}
-
-/* FULL PAGE LIGHT VIGNETTE */
-body::before{
-  content:"";position:fixed;top:0;left:0;width:100%;height:100%;
-  background:radial-gradient(circle at center,rgba(0,200,255,0.08),transparent 65%);
-  z-index:-5;
-}
-
-/* MULTI‑LAYER STARFIELD */
-#bg1,#bg2,#bg3,#bg4{
-  position:fixed;top:0;left:0;width:100%;height:100%;z-index:-3;pointer-events:none;
-}
-#bg1{opacity:.15;filter:blur(1px);}#bg2{opacity:.3;filter:blur(2px);}#bg3{opacity:.55;filter:blur(3px);}#bg4{opacity:.82;filter:blur(4px);} 
-
-/* HERO */
-.hero{
-  text-align:center;padding:150px 20px 100px;
-  background:radial-gradient(circle at center,#002034,#000 80%);
-  animation:heroGlow 5s ease-in-out infinite alternate;
-}
-@keyframes heroGlow{from{text-shadow:var(--glow-soft);}to{text-shadow:var(--glow-hard);} }
-.hero h1{font-size:clamp(3rem,7vw,6rem);letter-spacing:3px;margin:0;}
-.hero h2{font-size:clamp(1rem,2.5vw,1.4rem);opacity:.92;margin-top:10px;}
-
-/* SECTION */
-.section{
-  max-width:1400px;margin:70px auto;padding:55px;
-  background:linear-gradient(145deg,rgba(0,50,85,.55),rgba(0,20,40,.55));
-  border-radius:22px;border:1px solid rgba(25,214,255,0.4);
-  box-shadow:0 0 45px rgba(0,150,255,.25),inset 0 0 25px rgba(0,150,255,.15);
-  backdrop-filter:blur(12px);
-}
-.section h3{font-size:2.8rem;margin-bottom:30px;text-shadow:var(--glow-soft);} 
-
-/* GRID */
-.grid{
-  display:grid;gap:35px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-}
-
-/* GAME CARD: ULTRA MODE */
-.game-card{
-  background:rgba(0,80,125,.4);
-  border:2px solid var(--ultra);
-  border-radius:18px;
-  padding:30px;
-  box-shadow:0 0 30px rgba(50,220,255,.3);
-  position:relative;overflow:hidden;transition:.35s;
-}
-.game-card:hover{
-  transform:translateY(-8px) scale(1.04);
-  box-shadow:var(--glow-hard);
-  background:rgba(0,140,255,.23);
-}
-
-/* HOLOGRAPHIC SHEEN */
-.game-card::before{
-  content:"";position:absolute;top:-50%;left:-50%;width:200%;height:200%;
-  background:radial-gradient(circle,rgba(80,240,255,.22),transparent 55%);
-  transform:scale(0);transition:.6s ease-out;
-}
-.game-card:hover::before{transform:scale(1);} 
-
-/* TEXT */
-.game-card h4{margin:0 0 12px;font-size:1.45rem;text-shadow:var(--glow-soft);} 
-.game-card p{opacity:.92;line-height:1.4;margin-bottom:20px;font-size:.95rem;} 
-
-/* BUTTON */
-.game-card a{
-  display:inline-block;padding:12px 20px;
-  border:2px solid var(--ultra);
-  border-radius:14px;text-decoration:none;
-  font-weight:bold;color:var(--ultra);
-  background:rgba(0,85,140,.35);
-  transition:.25s;
-}
-.game-card a:hover{
-  background:var(--ultra);color:#000;box-shadow:var(--glow-soft);
-}
-
-/* FOOTER */
-footer{text-align:center;padding:60px 20px;opacity:.85;font-size:1rem;} 
-footer a{color:var(--ultra);text-decoration:none;text-shadow:var(--glow-soft);} 
-
-/* MOBILE */
-@media(max-width:700px){.section{padding:35px;margin:25px 15px;}}
-@media(max-width:450px){.hero h1{font-size:2.3rem;}.hero h2{font-size:.85rem;}}
-</style>
-
-<!-- GOD‑MODE LEGENDARY TIER VISUAL ENGINE ACTIVATED -->
-<style>
-/* LEGENDARY MODE ADDITIONS */
-
-/* GLOBAL LIGHT BEAM */
-body::after{
-  content:"";
-  position:fixed;top:0;left:50%;transform:translateX(-50%);
-  width:70vw;height:100vh;
-  background:radial-gradient(circle,rgba(0,255,255,0.08),transparent 70%);
-  z-index:-4;pointer-events:none;
-}
-
-/* FLOATING HOLOGRAPHIC NAV */
-.navbar{
-  position:fixed;top:20px;left:50%;transform:translateX(-50%);
-  display:flex;gap:32px;padding:12px 28px;
-  background:rgba(0,25,50,0.55);
-  border:1px solid rgba(25,214,255,0.4);
-  backdrop-filter:blur(10px);
-  border-radius:18px;box-shadow:0 0 20px rgba(0,200,255,0.25);
-  z-index:50;
-}
-.navbar a{
-  color:var(--ultra);text-decoration:none;font-weight:bold;
-  font-size:.95rem;letter-spacing:1px;
-  transition:.25s;
-}
-.navbar a:hover{color:white;text-shadow:0 0 12px var(--ultra);} 
-
-/* GAME THUMBNAIL SUPPORT */
-.game-thumb{
-  width:100%;height:150px;border-radius:12px;margin-bottom:14px;
-  background-size:cover;background-position:center;
-  filter:brightness(1.05) drop-shadow(0 0 8px rgba(0,200,255,0.35));
-  transition:.35s;
-}
-.game-card:hover .game-thumb{filter:brightness(1.35);} 
-
-/* SCROLL REVEAL */
-.visible{opacity:1;transform:translateY(40px);transition:1s ease-out;}
-.visible.visible{opacity:1;transform:translateY(0);} 
-
+:root{color-scheme:dark;--bg:#070b17;--panel:#111b31;--line:#2c3c5c;--cyan:#83f8f0;--violet:#bea2ff;--muted:#b2c1da}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;color:#f4f7ff;background:radial-gradient(ellipse at 75% 7%,#282151a1,transparent 37%),radial-gradient(ellipse at 0 34%,#083c4b70,transparent 34%),var(--bg);font:16px/1.6 system-ui,-apple-system,'Segoe UI',sans-serif}
+a{color:inherit}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #f9d485;outline-offset:3px}
+.wrap{width:min(1200px,calc(100% - 40px));margin:auto}.skip{position:absolute;top:-90px;left:8px;background:white;color:black;padding:12px}.skip:focus{top:8px;z-index:20}
+header{display:flex;align-items:center;gap:26px;min-height:86px;border-bottom:1px solid #34435d60}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:13px;font-weight:900;letter-spacing:.055em}
+.brand b,.c{color:var(--cyan)}.logo{display:grid;place-items:center;border:1px solid #75e2e4a0;border-radius:11px;width:39px;height:39px;font-size:26px;color:var(--cyan);background:#183051}
+nav{display:flex;gap:22px;margin-left:auto}nav a,.home{font-size:11px;font-weight:850;letter-spacing:.09em;text-decoration:none;color:#d2deec}
+nav a:hover,.home:hover{color:var(--cyan)}.home{border:1px solid var(--line);padding:11px;border-radius:9px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:32px;min-height:585px;padding-block:64px}
+.kicker{font-size:11px;font-weight:900;letter-spacing:.16em;color:var(--cyan);margin:0 0 18px}
+h1{font-size:clamp(3.2rem,7.2vw,6.5rem);letter-spacing:-.075em;line-height:1.02;margin:0 0 18px;font-weight:950}
+h1 span{display:block;background:linear-gradient(95deg,#61ecec,#a9a2ff);background-clip:text;color:transparent}
+.sub{font-size:24px;font-weight:720;letter-spacing:-.03em;margin:0 0 12px}
+.desc{max-width:500px;color:var(--muted);line-height:1.75;margin:0 0 25px}
+.buttons{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:13px 19px;border-radius:11px;font-size:11px;font-weight:900;letter-spacing:.08em;text-decoration:none;border:1px solid #435478;background:#14213a;color:white}.btn.primary{background:linear-gradient(95deg,#79f8eb,#8fdaff);color:#06262a;border:0}.btn:hover:not(:disabled){filter:brightness(1.13)}
+.credit{margin-top:27px;font-size:11px;letter-spacing:.07em;color:#a2b5ce}.credit strong{color:#f0faff}
+.art{position:relative;width:min(100%,490px);aspect-ratio:1;display:grid;place-items:center;margin:auto;background:radial-gradient(circle,#142d5d 5%,transparent 67%);overflow:hidden}
+.ring{position:absolute;border:2px solid #79dff980;border-radius:50%;box-shadow:0 0 33px #3dd7fb33}.r1{width:90%;height:90%;border-style:dashed}.r2{width:68%;height:68%;border-color:#bf9bff9c}.r3{width:47%;height:47%}
+.core{border-radius:50%;display:grid;place-items:center;width:35%;aspect-ratio:1;background:radial-gradient(circle at 40% 30%,#36658d,#122042 78%);border:2px solid var(--cyan);box-shadow:0 0 60px #71e9fc60;font-size:clamp(5rem,12vw,8rem);color:#a5fffa;text-shadow:0 0 23px #73e9eb}
+.art small{position:absolute;bottom:10%;color:#a2b1cb;font-size:11px;font-weight:900;letter-spacing:.18em}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:13px;background:#111b31aa}
+.stats div{padding:24px;display:grid;gap:2px}.stats div+div{border-left:1px solid var(--line)}.stats strong{font-size:28px;letter-spacing:-.07em}.stats span{font-size:10px;letter-spacing:.1em;color:#a5b5d2;font-weight:850}
+section.catalog{padding-block:90px 55px}h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.055em;line-height:1.16;margin:0 0 11px}h2 span{color:var(--cyan)}.lead{margin:0 0 25px;color:var(--muted)}
+.tools{display:flex;gap:18px;justify-content:space-between;align-items:center;margin-bottom:22px}.filters{display:flex;gap:7px;flex-wrap:wrap}.chip{background:#121e34;color:#b8c6de;border:1px solid var(--line);font-size:10px;font-weight:900;letter-spacing:.07em;border-radius:8px;padding:10px 12px;min-height:40px}.chip[aria-pressed=true]{color:var(--cyan);background:#173640;border-color:#5ca7ae}
+.search{padding:10px 13px;min-height:44px;border-radius:9px;background:#121e34;border:1px solid var(--line);color:white;max-width:100%}
+.games{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}.game{overflow:hidden;min-width:0;background:linear-gradient(150deg,#15223d,#0e172b);border:1px solid var(--line);border-radius:17px;transition:transform .2s,border-color .2s}.game:hover{transform:translateY(-4px);border-color:#5d87a2}.game[hidden]{display:none}.cover{height:210px;position:relative;display:grid;place-items:center;overflow:hidden}.cover small{position:absolute;left:18px;top:14px;font-size:10px;font-weight:900;letter-spacing:.1em;color:#e8f3fc}.glyph{font-size:100px;font-weight:700;text-shadow:0 0 40px currentColor}
+.block{background:radial-gradient(circle,#155669,#092036 72%);color:#8efbfc}.rail{background:repeating-linear-gradient(89deg,#0d203c 0px,#10254a 35px,#203a6b 37px,#09172d 68px);color:#92e5ff}.orbit{background:radial-gradient(circle,#283257,#15102a 72%);color:#b5acff}.rift{background:radial-gradient(circle,#4e256c,#14102b 72%);color:#d7a2ff}.memory{background:radial-gradient(circle,#274c68,#10203e 72%);color:#92fff2}
+.details{padding:23px}.tag{font-size:10px;font-weight:900;letter-spacing:.11em;color:#8bbef7}.details h3{font-size:22px;letter-spacing:-.05em;line-height:1.2;margin:9px 0 11px}.details h3 span{color:var(--cyan)}.details p{min-height:73px;font-size:13px;color:#b2bfd5;line-height:1.7}.play{display:inline-block;margin-top:9px;padding:10px 0;color:var(--cyan);font-size:11px;letter-spacing:.08em;font-weight:900;text-decoration:none}.play:hover{text-decoration:underline}.empty{padding:25px;background:#151f32;border:1px solid var(--line);border-radius:10px}.note{color:#879cb8;font-size:12px;margin-top:20px}
+.bonus{padding-block:75px 105px}.play-area{display:grid;grid-template-columns:.85fr 1fr;gap:25px}.guide,.console{border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#18243e,#10192d);padding:30px}.guide h3{font-size:28px;line-height:1.15;margin:0 0 19px}.guide p{color:#c1cce0}.guide ol{list-style:none;padding:0;margin:27px 0}.guide li{padding:13px 0;border-top:1px solid var(--line);font-size:12px;font-weight:800}.guide li b{color:var(--cyan);margin-right:15px}.hint{font-size:12px}kbd{background:#344760;padding:2px 5px;border-radius:3px;color:white}
+.console{background:radial-gradient(circle at 50% 43%,#213a5d,#101a30 75%)}.console-top{display:flex;align-items:center;justify-content:space-between;gap:9px;font-size:11px;font-weight:900;letter-spacing:.09em}.tiny{background:#193151;border:1px solid #466183;color:white;border-radius:7px;padding:9px;font-size:10px;font-weight:850}
+.hud{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:24px 0 15px}.hud div{text-align:center;background:#0e1a2e;border:1px solid var(--line);border-radius:9px;padding:10px}.hud span{display:block;font-size:10px;color:#b1c0db;font-weight:800}.hud strong{font-size:25px}
+#message{text-align:center;color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:.12em;min-height:28px}
+.pad-grid{width:min(100%,326px);aspect-ratio:1;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 auto}.pad{border-radius:13px;border:2px solid #3a5576;background:linear-gradient(140deg,#284766,#172943);font-size:18px;font-weight:800;color:#bbcfdf;touch-action:manipulation;min-width:0;min-height:0}.pad:disabled{opacity:1}.pad.lit{background:#81f5f5;border-color:white;color:#103444;box-shadow:0 0 24px #74f6fbaa}.pad.bad{background:#c4406b;color:white;border-color:#ffd1df}
+.progress{height:5px;width:min(100%,326px);margin:16px auto;background:#2b3a51;border-radius:6px;overflow:hidden}.progress span{display:block;width:0%;height:100%;background:linear-gradient(90deg,#68f4ed,#bca2ff);transition:width .15s}
+#instructions{text-align:center;font-size:12px;color:#c3d0df;min-height:41px}.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}.actions button{flex:1}
+.about{display:grid;grid-template-columns:145px 1fr;gap:42px;align-items:center;padding:60px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-icon{display:grid;place-items:center;border-radius:50%;border:1px solid #6392ad;background:#152f46;box-shadow:0 0 35px #68e7ed44;width:130px;height:130px;font-size:90px;color:var(--cyan)}
+.about p{color:#b9c6da;font-size:14px}.about a{color:var(--cyan);font-size:12px;font-weight:850;text-decoration:none}
+footer{display:flex;justify-content:space-between;gap:12px;align-items:center;padding-block:40px;color:#9aacc6;font-size:12px}footer a{color:var(--cyan);text-decoration:none}
+@media(max-width:1050px){.games{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1.2fr .8fr}.art{width:100%}header{flex-wrap:wrap;padding-block:12px}nav{margin-left:auto}}
+@media(max-width:740px){.wrap{width:calc(100% - 30px)}header{justify-content:space-between}nav{order:3;width:100%;justify-content:space-around;margin:0;padding:9px 0}.home{font-size:10px}.hero{display:flex;flex-direction:column;align-items:stretch;padding-block:54px 27px;gap:5px}.hero h1{font-size:clamp(3.2rem,11vw,5.6rem)}.art{width:min(100%,310px)}.stats{grid-template-columns:repeat(2,1fr)}.stats div:nth-child(3){border-top:1px solid var(--line);border-left:0}.stats div:nth-child(4){border-top:1px solid var(--line)}.games{grid-template-columns:1fr}.tools{flex-wrap:wrap}.search{width:100%}.play-area{grid-template-columns:1fr}.catalog{padding-block:60px 30px!important}.guide,.console{padding:21px}.about{grid-template-columns:1fr;gap:15px}.about-icon{width:88px;height:88px;font-size:60px}footer{flex-direction:column;align-items:flex-start}}
+@media(max-width:350px){.brand{font-size:10px}.hero h1{font-size:3rem}.buttons .btn{width:100%}.stats div{padding:14px}.pad-grid{gap:6px}.hud strong{font-size:20px}.actions button{flex-basis:100%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
 </style>
 </head>
-
 <body>
-
-
-
-<canvas id="bg1"></canvas>
-<canvas id="bg2"></canvas>
-<canvas id="bg3"></canvas>
-<canvas id="bg4"></canvas>
-
-<div class="hero">
-  <h1>OMNISCIENTRIX ARCADE Ω∞ ULTRA</h1>
-  <h2>The HyperNeon Cosmic Game Grid — Created by Cornelius Aurelius</h2>
-</div>
-
-<div class="section visible" id="games">
-  <h3>Featured Neon Games</h3>
-  <div class="grid">
-
-    <div class="game-card"><h4>Neon Block Flip</h4><p>Reflex‑based hyperspeed neon flipping challenge.</p><a href="https://cornelius-aurelius.github.io/neon-block-flip/">PLAY GAME</a></div>
-
-    <div class="game-card"><h4>NEON SKYRAIL</h4><p>Ride the cosmic neon rail at light‑velocity. Dodge, drift, survive.</p><a href="https://cornelius-aurelius.github.io/NEON-SKYRAIL/">PLAY GAME</a></div>
-
-    <div class="game-card"><h4>Neon Orbit Singularity</h4><p>Orbit the neon singularity without collapsing into the core.</p><a href="https://cornelius-aurelius.github.io/neon-orbit-singularity/">PLAY GAME</a></div>
-
-    <div class="game-card"><h4>Reality Breaker</h4><p>Break illusions. Bend dimensions. Escape the layered realities.</p><a href="https://cornelius-aurelius.github.io/reality-breaker/">PLAY GAME</a></div>
-
-    <div class="game-card"><h4>Money Master Jr.</h4><p>A micro‑economy neon sim designed for rapid decision mastery.</p><a href="https://corneliusaurelius.github.io/money-master-jr/">PLAY GAME</a></div>
-
-    <div class="game-card"><h4>Resonance Tapper</h4><p>Sync with harmonic neon pulses and ascend the resonance ladder.</p><a href="https://corneliusaurelius.github.io/resonance-tapper/">PLAY GAME</a></div>
-
-  </div></div>
-
-
-<footer id="footer">
-  © 2025 Cornelius Aurelius — Omniscientrix vΩ System ·
-  <a href="https://zenodo.org/records/17362534">Peace License</a>
-</footer>
-
+<a class="skip" href="#games">Skip to games</a>
+<header class="wrap" id="top"><a class="brand" href="#top"><span class="logo">Ω</span>OMNISCIENTRIX <b>ARCADE</b></a><nav aria-label="Main"><a href="#games">GAMES</a><a href="#memory">SIGNAL MEMORY</a><a href="#about">ABOUT</a></nav><a class="home" href="https://corneliusaurelius.com/" target="_blank" rel="noopener noreferrer">CREATOR'S WEBSITE ↗</a></header>
+<main>
+<section class="hero wrap" aria-labelledby="title"><div><p class="kicker">✦ ORIGINAL FREE BROWSER GAMES / OMEGA COLLECTION</p><h1 id="title">ENTER THE <span>ARCADE.</span></h1><p class="sub">Five worlds. Infinite possibilities.</p><p class="desc">Puzzle. Race. React. Remember. Your next high score starts here. Play instantly on phone, tablet, Chromebook or desktop. No downloads or account required.</p><div class="buttons"><a class="btn primary" href="#games">▶ EXPLORE THE GAMES</a><a class="btn" href="#memory">PLAY THE BONUS CHALLENGE ↗</a></div><p class="credit">ORIGINAL GAMES & ARCADE CREATED BY <strong>CORNELIUS AURELIUS</strong></p></div><div class="art" role="img" aria-label="Futuristic neon orbital emblem"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="core">Ω</div><small>THE OMEGA COLLECTION ∞</small></div></section>
+<div class="stats wrap"><div><strong>05</strong><span>ORIGINAL EXPERIENCES</span></div><div><strong>FREE</strong><span>INSTANT PLAY</span></div><div><strong>∞</strong><span>REPLAY POSSIBILITIES</span></div><div><strong>ALL</strong><span>SCREEN SIZES</span></div></div>
+<section class="catalog wrap" id="games"><p class="kicker">01 / THE COLLECTION</p><h2>CHOOSE YOUR <span>CHALLENGE.</span></h2><p class="lead">Four standalone arcade games and one exclusive memory challenge.</p>
+<div class="tools"><div class="filters" aria-label="Filter games"><button class="chip" data-filter="all" aria-pressed="true">ALL</button><button class="chip" data-filter="puzzle" aria-pressed="false">PUZZLE</button><button class="chip" data-filter="arcade" aria-pressed="false">ARCADE</button><button class="chip" data-filter="reflex" aria-pressed="false">REFLEX</button><button class="chip" data-filter="memory" aria-pressed="false">MEMORY</button></div><input class="search" id="search" type="search" placeholder="Search games..." aria-label="Search games"></div>
+<div class="games" id="game-list">
+<article class="game" data-tags="puzzle" data-search="Neon Block Flip Omega puzzle logic strategy"><div class="cover block"><small>01 / LOGIC</small><span class="glyph">▣</span></div><div class="details"><span class="tag">PUZZLE · STRATEGY</span><h3>Neon Block Flip <span>∞ OMEGA</span></h3><p>Roll a futuristic prism across floating platforms. Solve 33 precision puzzles to find each exit.</p><a class="play" target="_blank" rel="noopener noreferrer" href="https://cornelius-aurelius.github.io/neon-block-flip/">PLAY NOW ↗</a></div></article>
+<article class="game" data-tags="arcade reflex" data-search="Neon Skyrail infinite hover racer racing dodge speed"><div class="cover rail"><small>02 / RACING</small><span class="glyph">⌁</span></div><div class="details"><span class="tag">RACING · SURVIVAL</span><h3>NEON SKYRAIL <span>∞</span></h3><p>Steer your hovercraft, dodge incoming hazards, collect energy and chase an unbeatable distance.</p><a class="play" target="_blank" rel="noopener noreferrer" href="https://cornelius-aurelius.github.io/NEON-SKYRAIL/">PLAY NOW ↗</a></div></article>
+<article class="game" data-tags="arcade reflex" data-search="Neon Orbit Singularity orbit precision timing tap"><div class="cover orbit"><small>03 / PRECISION</small><span class="glyph">◎</span></div><div class="details"><span class="tag">TIMING · PRECISION</span><h3>Neon Orbit <span>∞ SINGULARITY</span></h3><p>Time your tap as an orb races around its track. Land inside each glowing safe zone to ascend.</p><a class="play" target="_blank" rel="noopener noreferrer" href="https://cornelius-aurelius.github.io/neon-orbit-singularity/">PLAY NOW ↗</a></div></article>
+<article class="game" data-tags="arcade reflex" data-search="Reality Breaker Quantum Rift symbols power bosses reflex"><div class="cover rift"><small>04 / REFLEX</small><span class="glyph">⟡</span></div><div class="details"><span class="tag">REACTION · COMBOS</span><h3>Reality Breaker <span>∞</span></h3><p>Capture glowing symbols, build combos, power up and face cosmic rift bosses.</p><a class="play" target="_blank" rel="noopener noreferrer" href="https://cornelius-aurelius.github.io/reality-breaker/">PLAY NOW ↗</a></div></article>
+<article class="game" data-tags="puzzle memory" data-search="Omega Signal Memory pattern sequence tile remembering"><div class="cover memory"><small>05 / EXCLUSIVE</small><span class="glyph">✧</span></div><div class="details"><span class="tag">MEMORY · PATTERNS</span><h3>Ω Signal <span>MEMORY</span></h3><p>Remember and replay a growing sequence of glowing tiles. One wrong signal ends the run.</p><a class="play" href="#memory">PLAY ON THIS PAGE ↓</a></div></article>
+</div><p class="empty" id="empty" hidden>No games match your search. <button id="clear" type="button">Clear filters</button></p><p class="note">Games open in a new tab except Ω Signal Memory, which plays here. Unverified legacy links have been omitted.</p></section>
+<section class="bonus wrap" id="memory"><p class="kicker">02 / ARCADE EXCLUSIVE</p><h2>Ω SIGNAL <span>MEMORY.</span></h2><p class="lead">Watch. Remember. Repeat. How far can you go?</p><div class="play-area"><div class="guide"><h3>THE MEMORY CHALLENGE</h3><p>Press Start. Watch the flashing panels, then tap them in exactly the same order. Every cleared stage adds another pulse and improves your score.</p><ol><li><b>01</b>WATCH THE SEQUENCE</li><li><b>02</b>REPEAT EACH PANEL IN ORDER</li><li><b>03</b>BEAT YOUR PERSONAL BEST</li></ol><p class="hint">Tap or click a panel. On a keyboard use <kbd>1</kbd>–<kbd>9</kbd> to select the matching numbered panel. Sound is optional. You can replay a signal once per stage.</p></div><div class="console"><div class="console-top"><span>● OMEGA MEMORY CORE</span><button class="tiny" type="button" id="sound" aria-pressed="false">SOUND OFF</button></div><div class="hud"><div><span>STAGE</span><strong id="stage">01</strong></div><div><span>SCORE</span><strong id="score">0000</strong></div><div><span>BEST</span><strong id="best">00</strong></div></div><p id="message" aria-live="polite">READY TO BEGIN</p><div class="pad-grid" id="pads" role="group" aria-label="Nine memory panels"></div><div class="progress"><span id="bar"></span></div><p id="instructions" role="status">Memorise the sequence of glowing tiles to advance.</p><div class="actions"><button class="btn primary" type="button" id="start">▶ START CHALLENGE</button><button class="btn" type="button" id="replay" disabled>REPLAY SIGNAL</button></div></div></div></section>
+<section class="about wrap" id="about"><div class="about-icon" aria-hidden="true">Ω</div><div><p class="kicker">03 / THE CREATOR</p><h2>BUILT BY <span>CORNELIUS AURELIUS.</span></h2><p>Omniscientrix Arcade is an original collection of free browser games conceived and created by Cornelius Aurelius. Play logic puzzles, precision challenges, fast racing and reflex games from one central arcade.</p><p>The arcade is designed for desktop, Chromebook, tablet and mobile browsers with no downloads or logins needed.</p><a href="https://corneliusaurelius.com/" target="_blank" rel="noopener noreferrer">VISIT THE CREATOR'S OFFICIAL WEBSITE ↗</a></div></section>
+</main><footer class="wrap"><span>© <span id="year">2026</span> Cornelius Aurelius · Omniscientrix Arcade ∞</span><a href="#top">BACK TO TOP ↑</a></footer>
 <script>
-function sf(id,speed,count){
-  const c=document.getElementById(id),x=c.getContext('2d');
-  function r(){c.width=innerWidth;c.height=innerHeight;} r();
-  let s=Array.from({length:count},()=>({x:Math.random()*c.width,y:Math.random()*c.height,z:Math.random()*2+1}));
-  function a(){
-    x.clearRect(0,0,c.width,c.height);
-    s.forEach(o=>{x.fillStyle=`rgba(25,214,255,${0.3+Math.random()*0.7})`;x.beginPath();x.arc(o.x,o.y,o.z,0,6.28);x.fill();o.y+=o.z*speed;if(o.y>c.height)o.y=0;});
-    requestAnimationFrame(a);
-  } a();
-}
-sf('bg1',.1,140);sf('bg2',.18,200);sf('bg3',.28,260);sf('bg4',.38,330);
-</script>
-
-</body>
-</html>
+'use strict';
+const $=id=>document.getElementById(id);
+$('year').textContent=new Date().getFullYear();
+const cards=[...document.querySelectorAll('.game')],chips=[...document.querySelectorAll('[data-filter]')];
+let filter='all';
+function drawFilter(){const q=$('search').value.trim().toLowerCase();let n=0;cards.forEach(card=>{const show=(filter==='all'||card.dataset.tags.split(' ').includes(filter))&&(!q||(card.dataset.search+' '+card.textContent).toLowerCase().includes(q));card.hidden=!show;if(show)n++});$('empty').hidden=n!==0}
+chips.forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;chips.forEach(c=>c.setAttribute('aria-pressed',String(c===b)));drawFilter()}));
+$('search').addEventListener('input',drawFilter);
+$('clear').addEventListener('click',()=>{$('search').value='';chips[0].click()});
+const pads=Array.from({length:9},(_,i)=>{const b=document.createElement('button');b.type='button';b.className='pad';b.textContent=i+1;b.setAttribute('aria-label','Panel '+(i+1));b.disabled=true;$('pads').appendChild(b);b.addEventListener('click',()=>guess(i));return b});
+let game=null,timers=[],token=0,usedReplay=false,mute=true,audio=null,record=0;
+try{record=Math.max(0,Math.floor(Number(localStorage.getItem('omniscientrix_omega_best_v2'))||0))}catch{}
+$('best').textContent=String(record).padStart(2,'0');
+function schedule(fn,ms){timers.push(setTimeout(fn,ms))}
+function clearTimers(){++token;timers.forEach(clearTimeout);timers=[];pads.forEach(p=>p.classList.remove('lit','bad'))}
+function setPads(enabled){pads.forEach(p=>p.disabled=!enabled)}
+function tell(heading,info){$('message').textContent=heading;$('instructions').textContent=info}
+function updateHud(){$('stage').textContent=String(game?.stage||1).padStart(2,'0');$('score').textContent=String(game?.score||0).padStart(4,'0');$('best').textContent=String(record).padStart(2,'0')}
+function ping(i,bad=false){if(mute)return;try{const ac=window.AudioContext||window.webkitAudioContext;if(!ac)return;audio=audio||new ac();audio.resume();const o=audio.createOscillator(),g=audio.createGain(),t=audio.currentTime;o.type=bad?'triangle':'sine';o.frequency.value=bad?170:290+i*43;g.gain.setValueAtTime(.03,t);g.gain.exponentialRampToValueAtTime(.001,t+.16);o.connect(g).connect(audio.destination);o.start(t);o.stop(t+.17)}catch{}}
+$('sound').addEventListener('click',()=>{mute=!mute;$('sound').textContent=mute?'SOUND OFF':'SOUND ON';$('sound').setAttribute('aria-pressed',String(!mute));if(!mute)ping(2)});
+function glow(index,bad=false,time=300){const p=pads[index];p.classList.add(bad?'bad':'lit');ping(index,bad);schedule(()=>p.classList.remove('bad','lit'),time)}
+function preview(){clearTimers();const v=token;game.phase='preview';setPads(false);$('replay').disabled=true;const flash=Math.max(260,520-(game.stage-1)*16),delay=flash+210;const len=game.sequence.length;$('bar').style.width='0%';tell('WATCH THE SEQUENCE','Watch '+len+' glowing pulses, then repeat in order.');game.sequence.forEach((n,i)=>schedule(()=>{if(token===v)glow(n,false,flash)},650+i*delay));schedule(()=>{if(token===v){game.phase='input';setPads(true);$('replay').disabled=usedReplay;tell('YOUR TURN','Repeat all '+len+' pulses in the same order.')}},700+len*delay)}
+function newGame(){clearTimers();game={stage:1,sequence:[],position:0,score:0,phase:'idle'};usedReplay=false;$('start').textContent='↻ RESTART RUN';nextStage(1,0)}
+function nextStage(s,points){game={stage:s,sequence:Array.from({length:Math.min(14,2+s)},()=>Math.floor(Math.random()*9)),position:0,score:points,phase:'preview'};usedReplay=false;updateHud();preview()}
+function guess(n){if(!game||game.phase!=='input')return;
+if(n!==game.sequence[game.position]){game.phase='lost';setPads(false);$('replay').disabled=true;glow(n,true,400);$('bar').style.width='0%';tell('SIGNAL LOST','You reached stage '+game.stage+'. Restart to try for a new personal best.');$('start').textContent='↻ TRY AGAIN';return}
+game.position++;game.score+=10;glow(n,false,220);$('bar').style.width=(game.position/game.sequence.length*100)+'%';updateHud();
+if(game.position===game.sequence.length){game.phase='won';game.score+=100+25*game.stage;if(game.stage>record){record=game.stage;try{localStorage.setItem('omniscientrix_omega_best_v2',String(record))}catch{}}updateHud();setPads(false);$('replay').disabled=true;tell('STAGE CLEARED ✦','Beautiful! Another signal is incoming.');const v=token;schedule(()=>{if(v===token)nextStage(game.stage+1,game.score)},1350)}else tell('KEEP GOING',game.position+' of '+game.sequence.length+' pulses correct.')}
+$('start').addEventListener('click',newGame);
+$('replay').addEventListener('click',()=>{if(!game||game.phase!=='input'||usedReplay)return;usedReplay=true;game.position=0;preview()});
+document.addEventListener('keydown',e=>{if(e.repeat||e.altKey||e.metaKey||e.ctrlKey||!(/^[1-9]$/.test(e.key))||e.target.matches('input,textarea,select'))return;if(game?.phase==='input'){e.preventDefault();guess(Number(e.key)-1)}});
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&game?.phase==='preview'){clearTimers();game.phase='paused';setPads(false);$('replay').disabled=true;tell('PREVIEW INTERRUPTED','Restart the challenge after returning to this tab.')}});
+</script></body></html>
